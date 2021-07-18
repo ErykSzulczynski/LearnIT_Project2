@@ -1,0 +1,96 @@
+html{
+    width: 100vw;
+    min-height: 100vh;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #1c1c1e !important;
+}
+
+.title{
+    
+   width: 100vw;
+   height: 95px;
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 2.5vw;
+}
+
+.text{
+    color: whitesmoke;
+    font-size: 20px;
+}
+.photo{
+    width: 30vw;
+    height: 35vh;
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    padding-top: 15vh;
+}
+
+.admin__content{
+    margin: 2.5vw auto;
+    width: 95vw;
+}
+
+.posts__content-grid{
+    width: 95vw;
+    margin: 2.5vw auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-row-gap: 5vw;
+}
+
+.post__item{
+    width: 15vw;
+    margin: 0 auto;
+}
+
+.post__date{
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.add__post-btn{
+    margin-left: 2.5vw;
+    margin-top: 2.5vw
+}
+
+.brand__title{
+    padding-left: 2.5vw;
+}
+
+@media (max-width: 600px) {
+    .posts__content-grid {
+        grid-template-columns: auto;
+    }
+    
+    .post__item{
+        width: 100% !important;
+    }
+
+    .flexbox{
+        flex-direction: column;
+        padding-top: 5vh;
+    }
+
+    .flexbox img{
+        visibility: hidden;
+        display: none;
+    }
+
+    .text{
+        padding: 0 5vw;
+        width: 90vw;
+        padding-bottom: 5vh;
+    }
+  }
